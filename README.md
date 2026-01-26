@@ -30,11 +30,9 @@ Environnements de lab simulant des scénarios réels de sécurité réseau.
 |-----|-------------|-------------|
 | **[Lab 01 - Enterprise Attack & Defense](./labs/lab-01-enterprise-attack-defense/)** | Simulation d'attaque depuis Internet vers LAN interne via DMZ | Pivoting, segmentation VLAN, firewall, IDS |
 | **[Lab 02 - Suricata IDS Detection](./labs/lab-02-suricata-ids-detection/)** | Déploiement et configuration d'un IDS Suricata | Détection d'intrusion, analyse de trafic, règles personnalisées |
-| **[Lab 03 - Web Pentest](./labs/lab-03-web-pentest/)** | Tests d'intrusion sur applications web vulnérables (OWASP Top 10) | Pentest applicatif, injections SQL/XSS, CSRF |
 
 ---
-
-### 📦 **Scripts - Automatisation**
+| **[Lab 03 - Secure Banking Network Architecture](https://github.com/Alex987411/nexwarden-labs)** ⭐ | Architecture bancaire sécurisée complète avec segmentation réseau | Architecture réseau critique, zones de confiance, défense en profondeur |### 📦 **Scripts - Automatisation**
 
 Scripts utilitaires pour tâches réseau et sécurité.
 
@@ -43,6 +41,14 @@ Scripts utilitaires pour tâches réseau et sécurité.
 - **[Hardening](./scripts/hardening/)** : Automatisation de sécurisation système
 
 ---
+
+### 🔗 **Du Lab à l'Architecture Réelle**
+
+Les Labs 01 et 02 constituent des **environnements d'apprentissage contrôlés** permettant de maîtriser les fondamentaux de la sécurité réseau (attaque/défense, IDS, détection).
+
+Le **Lab 03** représente une **application concrète** de ces compétences : il s'agit du projet [**nexwarden-labs**](https://github.com/Alex987411/nexwarden-labs), une architecture bancaire sécurisée complète démontrant une approche architecte cybersecurité.
+
+👉 **[Voir le projet nexwarden-labs](https://github.com/Alex987411/nexwarden-labs)**
 
 ### ⚙️ **Configurations - Équipements réseau**
 
