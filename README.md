@@ -1,88 +1,105 @@
-# 🛡️ NEXWARDEN - Portfolio Technique en Cybersécurité
+# 🛡️ NEXWARDEN
 
-![CYBERSECURITY](https://img.shields.io/badge/Cybersecurity-Portfolio-green?style=for-the-badge)
-![STATUS](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+**Portfolio pratique en sécurité des infrastructures réseau**
 
-## 📚 Présentation
-
-Bienvenue sur **NEXWARDEN**, mon portfolio technique dédié à la cybersécurité. Ce dépôt regroupe mes travaux pratiques en **attaque**, **défense** et **administration sécurisée** d'infrastructures IT.
-
-Chaque projet est documenté avec :
-- ❓ **Le problème** identifié
-- 🛠️ **La solution** mise en œuvre
-- 🧪 **L'environnement** technique utilisé
-- 🎯 **Les résultats et apprentissages** obtenus
+![Network Security](https://img.shields.io/badge/Focus-Network%20%26%20Infrastructure%20Security-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Lab Based](https://img.shields.io/badge/Approach-Hands--on%20Labs-orange?style=for-the-badge)
 
 ---
 
-## 💻 Structure du Dépôt
+## 📖 À propos
 
-### ⭐ **Labs Signature**
+NEXWARDEN est mon portfolio technique dédié à la **sécurité des réseaux et des infrastructures**. Ce dépôt documente mes travaux pratiques en segmentation réseau, détection d'intrusion, tests d'intrusion internes et configuration sécurisée d'équipements réseau.
 
-Projets pratiques complets avec environnements simulés.
-
-- **[Lab 01 - Enterprise Attack Defense](./labs/lab-01-enterprise-attack-defense/)**  
-  Simulation d'attaque et défense dans un environnement AD/Windows.
-
-- **[Lab 02 - Suricata IDS Detection](./labs/lab-02-suricata-ids-detection/)**  
-  Déploiement et optimisation d'un IDS avec Suricata (basé sur mémoire de licence).
-
-- **[Lab 03 - Web Pentest](./labs/lab-03-web-pentest/)**  
-  Tests d'intrusion sur applications web vulnérables (OWASP Top 10).
+**Chaque projet est documenté avec :**
+- ❓ Le **contexte** et le problème technique
+- 🛠️ La **solution** mise en place (en lab)
+- 🧪 **L'environnement** utilisé (VMs, outils, topologies)
+- 🎯 Les **compétences** techniques démontrées
 
 ---
 
-### 📦 **Scripts d'Automatisation**
+## 🏗️ Structure du dépôt
 
-Scripts pratiques pour automatiser des tâches récurrentes.
+### ⭐ **Labs - Projets pratiques**
 
-- **[Network Scripts](./scripts/network/)** : Analyse et monitoring réseau  
-- **[Pentest Scripts](./scripts/pentest/)** : Outils pour tests d'intrusion  
-- **[Hardening Scripts](./scripts/hardening/)** : Automatisation de sécurisation système
+Environnements de lab simulant des scénarios réels de sécurité réseau.
 
----
-
-### ⚙️ **Configurations Sécurisées**
-
-Exemples de configurations d'équipements réseau et systèmes.
-
-- **[VyOS](./configs/vyos/)** : Configuration de routeur (DHCP, DNS, VPN, NAT)  
-- **[Firewall](./configs/firewall/)** : Règles de filtrage et politiques de sécurité  
-- **[VLAN](./configs/vlan/)** : Segmentation réseau et isolation
+| Lab | Description | Compétences |
+|-----|-------------|-------------|
+| **[Lab 01 - Enterprise Attack & Defense](./labs/lab-01-enterprise-attack-defense/)** | Simulation d'attaque depuis Internet vers LAN interne via DMZ | Pivoting, segmentation VLAN, firewall, IDS |
+| **[Lab 02 - Suricata IDS Detection](./labs/lab-02-suricata-ids-detection/)** | Déploiement et configuration d'un IDS Suricata | Détection d'intrusion, analyse de trafic, règles personnalisées |
+| **[Lab 03 - Web Pentest](./labs/lab-03-web-pentest/)** | Tests d'intrusion sur applications web vulnérables (OWASP Top 10) | Pentest applicatif, injections SQL/XSS, CSRF |
 
 ---
 
-### 📝 **Rapports et Audits**
+### 📦 **Scripts - Automatisation**
 
-Rapports structurés de tests et audits de sécurité.
+Scripts utilitaires pour tâches réseau et sécurité.
 
-- **[Pentest Reports](./reports/pentest/)** : Rapports de tests d'intrusion avec recommandations  
-- **[Security Audits](./reports/audits/)** : Audits de conformité (ISO 27001, NIST, CIS)
+- **[Network](./scripts/network/)** : Scan, monitoring, analyse de trafic
+- **[Pentest](./scripts/pentest/)** : Outils pour tests d'intrusion internes
+- **[Hardening](./scripts/hardening/)** : Automatisation de sécurisation système
+
+---
+
+### ⚙️ **Configurations - Équipements réseau**
+
+Exemples de configurations sécurisées d'équipements réseau.
+
+- **[VyOS](./configs/vyos/)** : Configuration routeur (DHCP, DNS, VPN, NAT)
+- **[Firewall](./configs/firewall/)** : Règles de filtrage et politiques d'accès
+- **[VLAN](./configs/vlan/)** : Segmentation et isolation réseau
+
+---
+
+### 📝 **Rapports - Documentation professionnelle**
+
+Documentation structurée de tests et audits.
+
+- **[Pentest Reports](./reports/pentest/)** : Rapports de tests d'intrusion avec recommandations
+- **[Security Audits](./reports/audits/)** : Audits techniques et méthodologiques
 
 ---
 
 ## 🎯 Objectif
 
-Démontrer mes compétences en cybersécurité à travers des projets concrets et professionnels, sans diplomé avancé, mais avec une solide expertise pratique acquise par l'apprentissage autonome et l'expérimentation.
+Démontrer mes compétences pratiques en **sécurité des infrastructures réseau** à travers des labs réalistes, une documentation rigoureuse et une approche méthodique de l'apprentissage.
+
+**Ce que ce portfolio démontre :**
+- Capacité à concevoir et sécuriser des architectures réseau
+- Maîtrise des outils de détection et de prévention d'intrusion
+- Compétences en tests d'intrusion internes (Red Team / Blue Team)
+- Rigueur dans la documentation et la communication technique
 
 ---
 
-## 🚀 Technologies Utilisées
+## 🛠️ Technologies utilisées
 
-- **Offensive** : Kali Linux, Metasploit, Burp Suite, Nmap, Hydra  
-- **Defensive** : Suricata, Snort, OSSEC, pfSense, Wazuh  
-- **Systèmes** : Windows Server, Linux (Debian, Ubuntu), Active Directory  
-- **Réseau** : VyOS, Cisco, VLANs, VPN (WireGuard, OpenVPN)  
-- **Outils** : Docker, Ansible, Python, Bash
+**Systèmes & Virtualisation :**  
+VMware Workstation, GNS3, VirtualBox, Windows Server, Linux (Debian/Ubuntu)
+
+**Offensive Security :**  
+Kali Linux, Metasploit, Nmap, Burp Suite, Hydra, SQLMap
+
+**Defensive Security :**  
+Suricata, Snort, pfSense, OPNsense, Wazuh, OSSEC
+
+**Réseau & Infrastructure :**  
+VyOS, VLANs, Firewall (pfSense/iptables), VPN (WireGuard/OpenVPN), Active Directory
+
+**Scripts & Automatisation :**  
+Bash, Python
 
 ---
 
-## 💬 Contact
+## 📬 Contact
 
-N'hésitez pas à explorer mes projets et à me contacter pour toute question ou collaboration.
+Intéressé par mes projets ou souhaitez discuter de sécurité réseau ?
 
-📧 **Email** : [votre-email@exemple.com]  
-🔗 **LinkedIn** : [Votre profil LinkedIn]
+📧 **Email :** [votre-email@exemple.com]  
+🔗 **LinkedIn :** [Votre profil LinkedIn]
 
 ---
 
