@@ -66,8 +66,8 @@ Environnements contrôlés pour maîtriser les fondamentaux.
 |-----|-------|-------------|
 | **Lab 01 - Enterprise Attack & Defense** | Red/Blue Team | Pivoting, segmentation VLAN, firewall, IDS |
 | **Lab 02 - Suricata IDS Detection** | SOC miniature | Détection d'intrusion, analyse de trafic, règles |
+| **Lab 03 - Tests d'intrusion web (OWASP Top 10)** | Red Team Offensif | Reconnaissance, exploitation SQLi/XSS, IDOR, pentesting web |
 
-> **Note** : Le **Lab 03 = nexwarden-labs** (Architecture Bancaire) – C'est le projet professionnel principal.
 
 ### 📚 De l'Apprentissage en Lab à l'Architecture Réelle
 
