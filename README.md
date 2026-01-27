@@ -8,105 +8,175 @@
 
 ---
 
-## 📖 À propos
+## 📚 Vue Rapide
 
-NEXWARDEN est mon portfolio technique dédié à la **sécurité des réseaux et des infrastructures**. Ce dépôt documente mes travaux pratiques en segmentation réseau, détection d'intrusion, tests d'intrusion internes et configuration sécurisée d'équipements réseau.
+NEXWARDEN est mon **environnement de travail global** regroupant projets académiques et professionnels en cybersécurité appliquée aux réseaux et infrastructures.
 
-**Chaque projet est documenté avec :**
-- ❓ Le **contexte** et le problème technique
-- 🛠️ La **solution** mise en place (en lab)
+### 📌 Accès Direct
+
+- 🔵 **[Projet Professionnel : Architecture Bancaire Sécurisée](https://github.com/Alex987411/nexwarden-labs)** – En cours
+- 🟣 **[Projet Académique : Mémoire IDS Suricata](./academic/ids-suricata-memoire)** – Validé
+- ⚙️ **[Configurations Réseau](./configs)** – VyOS, VLANs, Firewall
+- 📜 **[Rapports de Sécurité](./reports)** – Audits & Tests
+- 🛠️ **[Scripts d'Automatisation](./scripts)** – Python, Bash
+
+---
+
+## 🔍 À propos de NEXWARDEN
+
+NEXWARDEN documente mes travaux pratiques en **sécurité des réseaux et infrastructures**. Ce dépôt regroupe : 
+- Projets labs réalistes (segmentation, IDS/IPS, architecture)
+- Scripts d'automatisation (monitoring, hardening)
+- Configurations sécurisées d'équipements réseau
+- Rapports techniques et audits
+
+### 🎯 Objectif
+
+Démontrer des **compétences pratiques** en cybersécurité à travers :
+- ❓ **Le contexte** et le problème technique
+- 🛠️ **La solution** mise en place (en lab)
 - 🧪 **L'environnement** utilisé (VMs, outils, topologies)
-- 🎯 Les **compétences** techniques démontrées
+- 🎯 **Les compétences** techniques démontrées
 
 ---
 
-## 🏗️ Structure du dépôt
+## 📊 Structure du Dépôt
 
-### ⭐ **Labs - Projets pratiques**
+### 🟣 Projets Académiques
 
-Environnements de lab simulant des scénarios réels de sécurité réseau.
+Projets **terminés et validés** dans un cadre académique, servant de **preuve de rigueur méthodologique**.
 
-| Lab | Description | Compétences |
-|-----|-------------|-------------|
-| **[Lab 01 - Enterprise Attack & Defense](./labs/lab-01-enterprise-attack-defense/)** | Simulation d'attaque depuis Internet vers LAN interne via DMZ | Pivoting, segmentation VLAN, firewall, IDS |
-| **[Lab 02 - Suricata IDS Detection](./labs/lab-02-suricata-ids-detection/)** | Déploiement et configuration d'un IDS Suricata | Détection d'intrusion, analyse de trafic, règles personnalisées |
+| Projet | Description | Statut |
+|--------|-------------|--------|
+| **[IDS Suricata - Mémoire](./academic/ids-suricata-memoire)** | Implémentation de Suricata pour la détection d'intrusions | ✅ Validé |
+
+### 🔵 Projets Professionnels
+
+Projets **en cours** orientés entreprise, démontrant une **approche architecte cybersécurité**.
+
+| Projet | Description | Statut |
+|--------|-------------|--------|
+| **[nexwarden-labs](https://github.com/Alex987411/nexwarden-labs)** | Architecture bancaire sécurisée complète | 🚧 En cours |
+
+### 🔥 Labs Techniques (Apprentissage)
+
+Environnements contrôlés pour maîtriser les fondamentaux.
+
+| Lab | Focus | Compétences |
+|-----|-------|-------------|
+| **Lab 01 - Enterprise Attack & Defense** | Red/Blue Team | Pivoting, segmentation VLAN, firewall, IDS |
+| **Lab 02 - Suricata IDS Detection** | SOC miniature | Détection d'intrusion, analyse de trafic, règles |
+
+> **Note** : Le **Lab 03 = nexwarden-labs** (Architecture Bancaire) – C'est le projet professionnel principal.
+
+### 📚 De l'Apprentissage en Lab à l'Architecture Réelle
+
+**Progression logique** :
+1. **Expérimenter** (Labs 01 & 02) : Maîtriser attaque/défense et détection
+2. **Détecter & Analyser** (Mémoire académique) : IDS Suricata en environnement contrôlé
+3. **Concevoir & Architecturer** ([nexwarden-labs](https://github.com/Alex987411/nexwarden-labs)) : Application à une architecture bancaire complète
 
 ---
-| **[Lab 03 - Secure Banking Network Architecture](https://github.com/Alex987411/nexwarden-labs)** ⭐ | Architecture bancaire sécurisée complète avec segmentation réseau | Architecture réseau critique, zones de confiance, défense en profondeur |### 📦 **Scripts - Automatisation**
+
+## 🛠️ Outils & Scripts
+
+### Scripts - Automatisation
 
 Scripts utilitaires pour tâches réseau et sécurité.
 
-- **[Network](./scripts/network/)** : Scan, monitoring, analyse de trafic
-- **[Pentest](./scripts/pentest/)** : Outils pour tests d'intrusion internes
-- **[Hardening](./scripts/hardening/)** : Automatisation de sécurisation système
+- **[Network](./scripts/network)** : Scan, monitoring, analyse de trafic
+- **[Pentest](./scripts/pentest)** : Outils pour tests d'intrusion internes
+- **[Hardening](./scripts/hardening)** : Automatisation de sécurisation système
 
----
-
-### 🔗 **Du Lab à l'Architecture Réelle**
-
-Les Labs 01 et 02 constituent des **environnements d'apprentissage contrôlés** permettant de maîtriser les fondamentaux de la sécurité réseau (attaque/défense, IDS, détection).
-
-Le **Lab 03** représente une **application concrète** de ces compétences : il s'agit du projet [**nexwarden-labs**](https://github.com/Alex987411/nexwarden-labs), une architecture bancaire sécurisée complète démontrant une approche architecte cybersecurité.
-
-👉 **[Voir le projet nexwarden-labs](https://github.com/Alex987411/nexwarden-labs)**
-
-### ⚙️ **Configurations - Équipements réseau**
+### Configurations - Équipements Réseau
 
 Exemples de configurations sécurisées d'équipements réseau.
 
-- **[VyOS](./configs/vyos/)** : Configuration routeur (DHCP, DNS, VPN, NAT)
-- **[Firewall](./configs/firewall/)** : Règles de filtrage et politiques d'accès
-- **[VLAN](./configs/vlan/)** : Segmentation et isolation réseau
+- **[VyOS](./configs/vyos)** : Configuration routeur (DHCP, DNS, VPN, NAT)
+- **[Firewall](./configs/firewall)** : Règles de filtrage et politiques d'accès
+- **[VLAN](./configs/vlan)** : Segmentation et isolation réseau
 
----
-
-### 📝 **Rapports - Documentation professionnelle**
+### Rapports - Documentation Professionnelle
 
 Documentation structurée de tests et audits.
 
-- **[Pentest Reports](./reports/pentest/)** : Rapports de tests d'intrusion avec recommandations
-- **[Security Audits](./reports/audits/)** : Audits techniques et méthodologiques
+- **[Pentest Reports](./reports/pentest)** : Rapports de tests d'intrusion avec recommandations
+- **[Security Audits](./reports/audits)** : Audits techniques et méthodologiques
 
 ---
 
-## 🎯 Objectif
+## 🧠 Compétences Démontrées
 
-Démontrer mes compétences pratiques en **sécurité des infrastructures réseau** à travers des labs réalistes, une documentation rigoureuse et une approche méthodique de l'apprentissage.
+### Architecture & Réseau
+`Architecture réseau` `Segmentation VLAN` `Routage avancé` `VyOS` `pfSense` `GNS3` `Virtualisation`
 
-**Ce que ce portfolio démontre :**
-- Capacité à concevoir et sécuriser des architectures réseau
-- Maîtrise des outils de détection et de prévention d'intrusion
-- Compétences en tests d'intrusion internes (Red Team / Blue Team)
-- Rigueur dans la documentation et la communication technique
+### Sécurité Défensive
+`IDS/IPS` `Suricata` `Wazuh` `SIEM` `Monitoring SOC` `Détection d'intrusion` `Firewall`
 
----
+### Sécurité Offensive
+`Tests de pénétration` `Red Team` `Kali Linux` `Nmap` `Metasploit` `Reconnaissance`
 
-## 🛠️ Technologies utilisées
-
-**Systèmes & Virtualisation :**  
-VMware Workstation, GNS3, VirtualBox, Windows Server, Linux (Debian/Ubuntu)
-
-**Offensive Security :**  
-Kali Linux, Metasploit, Nmap, Burp Suite, Hydra, SQLMap
-
-**Defensive Security :**  
-Suricata, Snort, pfSense, OPNsense, Wazuh, OSSEC
-
-**Réseau & Infrastructure :**  
-VyOS, VLANs, Firewall (pfSense/iptables), VPN (WireGuard/OpenVPN), Active Directory
-
-**Scripts & Automatisation :**  
-Bash, Python
+### Automatisation & Scripting
+`Python` `Bash` `Automatisation` `Scripts monitoring` `Alertes automatiques`
 
 ---
 
-## 📬 Contact
+## 🎯 Ce que NEXWARDEN Prouve
+
+✅ **Capacité à concevoir et sécuriser des architectures réseau critiques**
+✅ **Maîtrise des outils IDS/IPS et SIEM (Suricata, Wazuh, ELK)**
+✅ **Compétences en tests d'intrusion internes (Red Team / Blue Team)**
+✅ **Rigueur dans la documentation et la communication technique**
+✅ **Approche méthodique : du lab à l'architecture réelle**
+
+---
+
+## 📊 Technologies Utilisées
+
+### Systèmes & Virtualisation
+`VMware Workstation` `GNS3` `VirtualBox` `Windows Server` `Linux (Debian/Ubuntu)`
+
+### Sécurité Offensive
+`Kali Linux` `Metasploit` `Nmap` `Burp Suite` `Hydra` `SQLMap`
+
+### Sécurité Défensive
+`Suricata` `Snort` `pfSense` `OPNsense` `Wazuh` `OSSEC`
+
+### Réseau & Infrastructure
+`VyOS` `VLANs` `Firewall (pfSense/iptables)` `VPN (WireGuard/OpenVPN)` `Active Directory`
+
+### Scripts & Automatisation
+`Bash` `Python`
+
+---
+
+## 🔗 Règle de Cohérence NEXWARDEN
+
+> **Chaque compétence ou projet affiché sur le portfolio web possède un lien direct vers une preuve GitHub dans ce dépôt.**
+
+Ce principe garantit que :
+- Le **portfolio web** = vitrine synthétique
+- Le **dépôt GitHub** = preuves techniques vérifiables
+- **Aucune ambigüïté** entre académique et professionnel
+
+---
+
+## 💬 Contact
 
 Intéressé par mes projets ou souhaitez discuter de sécurité réseau ?
 
-📧 **Email :** [votre-email@exemple.com]  
-🔗 **LinkedIn :** [Votre profil LinkedIn]
+- 📧 **Email** : Disponible sur demande via LinkedIn
+- 🔗 **LinkedIn** : [Alexandre DOSSOUKPEVI](https://www.linkedin.com/in/nexwarden)
+- 💻 **GitHub** : [Alex987411](https://github.com/Alex987411)
 
 ---
 
-⭐ **Si ce portfolio vous intéresse, n'hésitez pas à le star !**
+## ⭐ Soutenir le Projet
+
+Si ce portfolio vous intéresse, n'hésitez pas à le star ! 🌟
+
+---
+
+## 📝 Licence
+
+MIT License – Voir le fichier [LICENSE](LICENSE) pour plus de détails.
