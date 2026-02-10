@@ -168,6 +168,7 @@ Intéressé par mes projets ou souhaitez discuter de sécurité réseau ?
 - 📧 **Email** : Disponible sur demande via LinkedIn
 - 🔗 **LinkedIn** : [Alexandre DOSSOUKPEVI](https://www.linkedin.com/in/nexwarden)
 - 💻 **GitHub** : [Alex987411](https://github.com/Alex987411)
+- - 📄 **CV** : [Télécharger mon CV](assets/cv/CV_Alexandre_DOSSOUKPEVI.pdf)
 
 ---
 
