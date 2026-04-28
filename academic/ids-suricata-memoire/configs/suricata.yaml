@@ -1,0 +1,50 @@
+# Suricata Configuration - IDS Memoire
+# Configuration de base Suricata pour le mémoire de soutenance
+# Alexandre Dossoukpevi - 2024
+
+%YAML 1.1
+---
+
+# Interface réseau surveillée
+af-packet:
+  - interface: eth0
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+
+# Répertoires de logs
+default-log-dir: /var/log/suricata/
+
+# Niveau de log
+logging:
+  default-log-level: notice
+  outputs:
+  - console:
+      enabled: yes
+  - file:
+      enabled: yes
+      level: info
+      filename: suricata.log
+
+# Alertes EVE JSON
+outputs:
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: eve.json
+      types:
+        - alert:
+            payload: yes
+            http: yes
+        - http:
+            extended: yes
+        - dns:
+        - tls:
+
+# Répertoire des règles
+default-rules-dir: /etc/suricata/rules
+
+# Règles activées
+rule-files:
+  - suricata.rules
+  - custom-rules.rules
