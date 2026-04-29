@@ -85,8 +85,162 @@ Environnements contrôlés pour maîtriser les fondamentaux.
 Scripts utilitaires pour tâches réseau et sécurité.
 
 - **[Network](./scripts/network)** : Scan, monitoring, analyse de trafic
+- **[Pentest](./scripts/pentest)** : Outils pour tectrl+a Backspace# 🛡️ NEXWARDEN
+**Portfolio pratique en sécurité des infrastructures réseau**
+
+![Network Security](https://img.shields.io/badge/Focus-Network%20%26%20Infrastructure%20Security-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Lab Based](https://img.shields.io/badge/Approach-Hands--on%20Labs-orange?style=for-the-badge)
+
+---
+
+## 📚 Vue Rapide
+NEXWARDEN est mon **environnement de travail global** regroupant projets académiques et professionnels en cybersécurité appliquée aux réseaux et infrastructures.
+
+### 📌 Accès Direct
+- 🔵 **[Projet Professionnel : Architecture Bancaire Sécurisée](https://github.com/Alex-DKPV/nexwarden-labs)** – En cours
+- 🟣 **[Projet Académique : Mémoire IDS Suricata](./academic/ids-suricata-memoire)** – Validé
+- ⚙️ **[Configurations Réseau](./configs)** – VyOS, VLANs, Firewall
+- 📜 **[Rapports de Sécurité](./reports)** – Audits & Tests
+- 🛠️ **[Scripts d'Automatisation](./scripts)** – Python, Bash
+
+---
+
+## 🔍 À propos de NEXWARDEN
+NEXWARDEN documente mes travaux pratiques en **sécurité des réseaux et infrastructures**. Ce dépôt regroupe :
+- Projets labs réalistes (segmentation, IDS/IPS, architecture)
+- Scripts d'automatisation (monitoring, hardening)
+- Configurations sécurisées d'équipements réseau
+- Rapports techniques et audits
+
+### 🎯 Objectif
+Démontrer des **compétences pratiques** en cybersécurité à travers :
+- ❓ **Le contexte** et le problème technique
+- 🛠️ **La solution** mise en place (en lab)
+- 🧪 **L'environnement** utilisé (VMs, outils, topologies)
+- 🎯 **Les compétences** techniques démontrées
+
+---
+
+## 📊 Structure du Dépôt
+
+### 🟣 Projets Académiques
+Projets **terminés et validés** dans un cadre académique, servant de **preuve de rigueur méthodologique**.
+
+| Projet | Description | Statut |
+| :--- | :--- | :--- |
+| **[IDS Suricata - Mémoire](./academic/ids-suricata-memoire)** | Implémentation de Suricata pour la détection d'intrusions | ✅ Validé |
+
+### 🔵 Projets Professionnels
+Projets **en cours** orientés entreprise, démontrant une **approche architecte cybersécurité**.
+
+| Projet | Description | Statut |
+| :--- | :--- | :--- |
+| **[nexwarden-labs](https://github.com/Alex-DKPV/nexwarden-labs)** | Architecture bancaire sécurisée complète | 🚧 En cours |
+
+---
+
+## 🛠️ Outils & Scripts
+
+### Scripts - Automatisation
+- **[Network](./scripts/network)** : Scan, monitoring, analyse de trafic
 - **[Pentest](./scripts/pentest)** : Outils pour tests d'intrusion internes
 - **[Hardening](./scripts/hardening)** : Automatisation de sécurisation système
+
+### Configurations - Équipements Réseau
+- **[VyOS](./configs/vyos)** : Configuration routeur (DHCP, DNS, VPN, NAT)
+- **[Firewall](./configs/firewall)** : Règles de filtrage et politiques d'accès
+- **[VLAN](./configs/vlan)** : Segmentation et isolation réseau
+ctrl+a Backspace# 🛡️ NEXWARDEN
+**Portfolio pratique en sécurité des infrastructures réseau**
+
+![Network Security](https://img.shields.io/badge/Focus-Network%20%26%20Infrastructure%20Security-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Lab Based](https://img.shields.io/badge/Approach-Hands--on%20Labs-orange?style=for-the-badge)
+
+---
+
+## 📚 Vue Rapide
+NEXWARDEN est mon **environnement de travail global** regroupant projets académiques et professionnels en cybersécurité appliquée aux réseaux et infrastructures.
+
+### 📌 Accès Direct
+- 🔵 **[Projet Professionnel : Architecture Bancaire Sécurisée](https://github.com/Alex-DKPV/nexwarden-labs)** – En cours
+- 🟣 **[Projet Académique : Mémoire IDS Suricata](./academic/ids-suricata-memoire)** – Validé
+- ⚙️ **[Configurations Réseau](./configs)** – VyOS, VLANs, Firewall
+- 📜 **[Rapports de Sécurité](./reports)** – Audits & Tests
+- 🛠️ **[Scripts d'Automatisation](./scripts)** – Python, Bash
+
+---
+
+## 🔍 À propos de NEXWARDEN
+NEXWARDEN documente mes travaux pratiques en **sécurité des réseaux et infrastructures**. Ce dépôt regroupe :
+- Projets labs réalistes (segmentation, IDS/IPS, architecture)
+- Scripts d'automatisation (monitoring, hardening)
+- Configurations sécurisées d'équipements réseau
+- Rapports techniques et audits
+
+### 🎯 Objectif
+Démontrer des **compétences pratiques** en cybersécurité à travers :
+- ❓ **Le contexte** et le problème technique
+- 🛠️ **La solution** mise en place (en lab)
+- 🧪 **L'environnement** utilisé (VMs, outils, topologies)
+- 🎯 **Les compétences** techniques démontrées
+
+---
+
+## 📊 Structure du Dépôt
+
+### 🟣 Projets Académiques
+Projets **terminés et validés** dans un cadre académique, servant de **preuve de rigueur méthodologique**.
+
+| Projet | Description | Statut |
+| :--- | :--- | :--- |
+| **[IDS Suricata - Mémoire](./academic/ids-suricata-memoire)** | Implémentation de Suricata pour la détection d'intrusions | ✅ Validé |
+
+### 🔵 Projets Professionnels
+Projets **en cours** orientés entreprise, démontrant une **approche architecte cybersécurité**.
+
+| Projet | Description | Statut |
+| :--- | :--- | :--- |
+| **[nexwarden-labs](https://github.com/Alex-DKPV/nexwarden-labs)** | Architecture bancaire sécurisée complète | 🚧 En cours |
+
+---
+
+## 🛠️ Outils & Scripts
+
+### Scripts - Automatisation
+- **[Network](./scripts/network)** : Scan, monitoring, analyse de trafic
+- **[Pentest](./scripts/pentest)** : Outils pour tests d'intrusion internes
+- **[Hardening](./scripts/hardening)** : Automatisation de sécurisation système
+
+### Configurations - Équipements Réseau
+- **[VyOS](./configs/vyos)** : Configuration routeur (DHCP, DNS, VPN, NAT)
+- **[Firewall](./configs/firewall)** : Règles de filtrage et politiques d'accès
+- **[VLAN](./configs/vlan)** : Segmentation et isolation réseau
+
+---
+
+## 💬 Contact
+Intéressé par mes projets ?
+- **LinkedIn** : [Alexandre DOSSOUKPEVI](https://www.linkedin.com/in/nexwarden)
+- **GitHub** : [Alex-DKPV](https://github.com/Alex-DKPV)
+- **CV Portfolio** : [Voir mon CV](https://alex-dkpv.github.io/NEXWARDEN/cv_alex.html)
+
+---
+![Stats](https://github-readme-stats.vercel.app/api?username=Alex-DKPV&show_icons=true&theme=tokyonight)
+
+---
+
+## 💬 Contact
+Intéressé par mes projets ?
+- **LinkedIn** : [Alexandre DOSSOUKPEVI](https://www.linkedin.com/in/nexwarden)
+- **GitHub** : [Alex-DKPV](https://github.com/Alex-DKPV)
+- **CV Portfolio** : [Voir mon CV](https://alex-dkpv.github.io/NEXWARDEN/cv_alex.html)
+
+---
+![Stats](https://github-readme-stats.vercel.app/api?username=Alex-DKPV&show_icons=true&theme=tokyonight)
+sts d'intrusion internes
+- **[Hardening](./scripts/hardening)** : Automatisactrl+a ctrl+ction de sécurisation système
 
 ### Configurations - Équipements Réseau
 
