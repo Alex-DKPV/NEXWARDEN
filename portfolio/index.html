@@ -358,7 +358,7 @@
                 if(submitBtn) submitBtn.disabled = true;
 
                 try{
-                    const endpoint = 'https://formspree.io/f/VOTRE_ID'; // AMÉLIORATION: Remplacer VOTRE_ID
+                    const endpoint = 'https://formspree.io/f/mzdojbyo'; // AMÉLIORATION: Remplacer VOTRE_ID
                     const fd = new FormData(form);
                     const res = await fetch(endpoint, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
                     if(res.ok){
