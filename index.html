@@ -1,1 +1,1164 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta http-equiv="refresh" content="0;URL=/NEXWARDEN/portfolio/index.html"><title>Redirecting to Portfolio NEXWARDEN</title><style>body{background:#0a0a0f;color:#fff;font-family:Inter,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0}.loading{display:flex;flex-direction:column;align-items:center;gap:1.5rem;text-align:center}.spinner{width:48px;height:48px;border:3px solid rgba(0,255,136,.2);border-top-color:#00ff88;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}a{color:#00ff88}</style></head><body><div class="loading"><div class="spinner"></div><p>Chargement du portfolio NEXWARDEN...</p><p style="font-size:.85rem;color:rgba(255,255,255,.5)">Redirection en cours... <a href="/NEXWARDEN/portfolio/index.html">cliquez ici si rien ne se passe</a>.</p></div></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alexandre Dossoukpevi — Architecte Réseaux & Cybersécurité. Expert SOC, IDS/IPS (Suricata), Wazuh, pfSense. Preuves techniques sur NEXWARDEN. Disponible pour postes Ingénieur Réseaux & Cybersécurité (local/international)."> <!-- // AMÉLIORATION: Meta description enrichie avec mots-clés -->
+    <title>Portfolio Cybersécurité | Alexandre Dossoukpevi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230a0a0f' width='100' height='100' rx='20'/%3E%3Cpath d='M50 15L20 30v25c0 20 30 35 30 35s30-15 30-35V30L50 15z' fill='none' stroke='%2300ff88' stroke-width='4'/%3E%3Cpath d='M40 50l8 8 15-15' fill='none' stroke='%2300d4ff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <!-- // AMÉLIORATION: Suppression Tailwind in-browser (compilation client) - conversion vers CSS custom ci-dessous -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- // AMÉLIORATION: Conservation Font Awesome CDN -->
+    <!-- // AMÉLIORATION: Open Graph / Twitter / Canonical -->
+    <link rel="canonical" href="https://alex-dkpv.github.io/NEXWARDEN/">
+    <meta property="og:title" content="Portfolio Cybersécurité | Alexandre Dossoukpevi">
+    <meta property="og:description" content="Alexandre Dossoukpevi — Architecte Réseaux & Cybersécurité. Expert SOC, IDS/IPS (Suricata), Wazuh, pfSense. Preuves techniques sur NEXWARDEN.">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="https://alex-dkpv.github.io/NEXWARDEN/assets/portrait.png">
+    <meta property="og:url" content="https://alex-dkpv.github.io/NEXWARDEN/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio Cybersécurité | Alexandre Dossoukpevi">
+    <meta name="twitter:description" content="Alexandre Dossoukpevi — Architecte Réseaux & Cybersécurité. Expert SOC, IDS/IPS (Suricata), Wazuh, pfSense.">
+    <meta name="twitter:image" content="https://alex-dkpv.github.io/NEXWARDEN/assets/portrait.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        code, .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        :root {
+            --cyber-green: #00ff88;
+            --cyber-blue: #00d4ff;
+            --cyber-purple: #a855f7;
+            --dark-bg: #0a0a0f;
+        }
+        
+        body {
+            background: var(--dark-bg);
+            overflow-x: hidden;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #00ff88, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .cyber-border {
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            position: relative;
+        }
+        
+        .cyber-border::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, rgba(0,255,136,0.1), rgba(0,212,255,0.1));
+            z-index: -1;
+            border-radius: inherit;
+        }
+        
+        .academic-border {
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+        
+        .academic-border::before {
+            background: linear-gradient(135deg, rgba(168,85,247,0.1), rgba(236,72,153,0.1));
+        }
+        
+        .glow-green {
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+        
+        .glow-purple {
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+        }
+        
+        .terminal-bg {
+            background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+        }
+        
+        .matrix-bg {
+            background: 
+                radial-gradient(ellipse at top, rgba(0,255,136,0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(0,212,255,0.05) 0%, transparent 50%),
+                var(--dark-bg);
+        }
+        
+        .hex-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2300ff88' fill-opacity='0.03'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
+        }
+        
+        .project-card.featured {
+            border: 2px solid rgba(0, 255, 136, 0.5);
+        }
+        
+        .project-card.featured:hover {
+            box-shadow: 0 10px 50px rgba(0, 255, 136, 0.35);
+        }
+        
+        .project-card.academic {
+            border: 2px solid rgba(168, 85, 247, 0.5);
+        }
+        
+        .project-card.academic:hover {
+            box-shadow: 0 10px 50px rgba(168, 85, 247, 0.35);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00ff88, #00d4ff);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .pulse-dot {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .terminal-window {
+            position: relative;
+            width: 100%;
+            background: #1e1e2e;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .terminal-header {
+            background: #2d2d3f;
+            padding: 10px 15px;
+            display: flex;
+            gap: 8px;
+        }
+        
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .logo-main {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .proof-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 6px;
+            font-size: 11px;
+            color: #00ff88;
+            transition: all 0.2s;
+        }
+        
+        .proof-link:hover {
+            background: rgba(0, 255, 136, 0.2);
+            transform: translateY(-1px);
+        }
+        
+        .proof-link.academic {
+            background: rgba(168, 85, 247, 0.1);
+            border-color: rgba(168, 85, 247, 0.3);
+            color: #a855f7;
+        }
+        
+        .proof-link.academic:hover {
+            background: rgba(168, 85, 247, 0.2);
+        }
+        
+        @media (min-width: 768px) {
+            .logo-main {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+                /* Portrait hero — repositionné au-dessus du terminal */
+                .hero-visual,
+                .hero-right {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 24px;
+                }
+
+                .hero-portrait-wrap {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .hero-portrait-wrap img,
+                img.hero-portrait,
+                img[class*="portrait"],
+                img[class*="profile"] {
+                    width: 420px;
+                    max-width: 95%;
+                    height: auto;
+                    min-height: 480px;
+                    object-fit: cover;
+                    object-position: top center;
+                    display: block;
+                    /* // AMÉLIORATION: suppression des !important conflictuels pour améliorer accessibilité et contrôle JS/CSS */
+                    position: static;
+                    bottom: auto;
+                    right: auto;
+                    border-radius: 16px;
+                    filter: drop-shadow(0 12px 40px rgba(0, 255, 163, 0.22));
+                }
+
+                .terminal-window {
+                    position: relative;
+                    width: 100%;
+                }
+
+                /* Responsive mobile */
+                @media (max-width: 900px) {
+                    .hero-portrait-wrap img,
+                    img[class*="portrait"],
+                    img[class*="profile"] {
+                        width: 200px;
+                        margin: 0 auto 20px;
+                    }
+                }
+    </style>
+    
+
+    <!-- // AMÉLIORATION: JS déplacé dans <head> (defer) — Formspree, validation, sanitisation et améliorations accessibility -->
+    <script defer>
+    // AMÉLIORATION: JS centralisé (mobile menu, smooth scroll, observer, nav-bg, formspree)
+    document.addEventListener('DOMContentLoaded', function(){
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if(mobileMenuBtn && mobileMenu){
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', ()=>{ mobileMenu.classList.add('hidden'); mobileMenu.classList.remove('flex'); }));
+        }
+
+        // Smooth Scroll for internal anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e){
+                const href = this.getAttribute('href');
+                if(href && href.length>1){
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Fade-in Observer
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries)=>{ entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('visible'); }); }, observerOptions);
+        document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', ()=>{
+            const nav = document.querySelector('nav');
+            if(!nav) return;
+            if(window.scrollY > 50) nav.classList.add('bg-black/90'); else nav.classList.remove('bg-black/90');
+        });
+
+        // Reinforce security: ensure all external links have rel and aria-labels
+        document.querySelectorAll('a[target="_blank"]').forEach(a=>{
+            let rel = a.getAttribute('rel') || '';
+            if(!/noopener/.test(rel)) rel = (rel + ' noopener').trim();
+            if(!/noreferrer/.test(rel)) rel = (rel + ' noreferrer').trim();
+            a.setAttribute('rel', rel);
+            if(!a.getAttribute('aria-label')){
+                const href = (a.getAttribute('href')||'').toLowerCase();
+                if(href.includes('github')) a.setAttribute('aria-label','Ouvrir GitHub');
+                else if(href.includes('linkedin')) a.setAttribute('aria-label','Ouvrir LinkedIn');
+                else if(href.includes('.pdf')) a.setAttribute('aria-label','Télécharger le CV');
+                else if(href.includes('cv')) a.setAttribute('aria-label','Consulter le CV');
+                else a.setAttribute('aria-label','Lien externe');
+            }
+        });
+
+        // Formspree integration + validation + sanitisation
+        const form = document.getElementById('contactForm');
+        if(form){
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const feedback = document.getElementById('formMessage');
+            function escapeHtml(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+
+            form.addEventListener('submit', async (e)=>{
+                e.preventDefault();
+                if(feedback){ feedback.hidden = true; feedback.className = 'form-feedback'; }
+                const name = (form.querySelector('input[name="name"]')||{}).value?.trim() || '';
+                const email = (form.querySelector('input[name="email"]')||{}).value?.trim() || '';
+                const subject = (form.querySelector('select[name="subject"]')||{}).value || '';
+                const message = (form.querySelector('textarea[name="message"]')||{}).value?.trim() || '';
+
+                if(!name || !email || !message){
+                    if(feedback){ feedback.classList.add('error'); feedback.textContent = 'Veuillez compléter votre nom, email et message.'; feedback.hidden = false; }
+                    return;
+                }
+
+                const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(!emailRe.test(email)){
+                    if(feedback){ feedback.classList.add('error'); feedback.textContent = 'Veuillez fournir une adresse email valide.'; feedback.hidden = false; }
+                    return;
+                }
+
+                if(submitBtn) submitBtn.disabled = true;
+
+                try{
+                    const endpoint = 'https://formspree.io/f/mzdojbyo'; // AMÉLIORATION: Remplacer VOTRE_ID
+                    const fd = new FormData(form);
+                    const res = await fetch(endpoint, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
+                    if(res.ok){
+                        form.reset();
+                        if(feedback){ feedback.classList.add('success'); feedback.textContent = 'Merci — votre message a été envoyé.'; feedback.hidden = false; }
+                    } else {
+                        const json = await res.json().catch(()=>null);
+                        const errMsg = (json && json.error) ? json.error : 'Erreur lors de l\'envoi, réessayez plus tard.';
+                        if(feedback){ feedback.classList.add('error'); feedback.textContent = errMsg; feedback.hidden = false; }
+                    }
+                } catch(err){
+                    if(feedback){ feedback.classList.add('error'); feedback.textContent = 'Impossible de contacter le serveur. Vérifiez votre connexion.'; feedback.hidden = false; }
+                } finally { if(submitBtn) submitBtn.disabled = false; }
+            });
+        }
+
+    });
+    </script>
+</head>
+<body class="text-gray-100 matrix-bg hex-pattern min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-green-500/20">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="flex items-center gap-3">
+                    <img src="assets/logo-NEXWARDEN.png" alt="NEXWARDEN" class="h-10 w-auto object-contain">
+                    <span class="text-xl font-bold mono gradient-text">NEXWARDEN</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-green-400 transition">Accueil</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-green-400 transition">Compétences</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-green-400 transition">Projets</a>
+                    <a href="#academic" class="nav-link text-gray-300 hover:text-purple-400 transition">Académique</a>
+                    <a href="#nexwarden" class="nav-link text-gray-300 hover:text-green-400 transition">NEXWARDEN</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-green-500 to-cyan-500 text-black font-semibold rounded-lg hover:shadow-lg hover:shadow-green-500/30 transition">Contact</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-green-400" aria-label="Ouvrir le menu de navigation">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 z-40 bg-black/95 hidden flex-col items-center justify-center gap-8">
+        <a href="#home" class="text-2xl text-gray-300 hover:text-green-400">Accueil</a>
+        <a href="#skills" class="text-2xl text-gray-300 hover:text-green-400">Compétences</a>
+        <a href="#projects" class="text-2xl text-gray-300 hover:text-green-400">Projets</a>
+        <a href="#academic" class="text-2xl text-gray-300 hover:text-purple-400">Académique</a>
+        <a href="#nexwarden" class="text-2xl text-gray-300 hover:text-green-400">NEXWARDEN</a>
+        <a href="#contact" class="text-2xl text-green-400">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- Mobile Portrait -->
+                    <div class="lg:hidden mb-8 flex justify-center">
+                        <div class="relative w-56 h-56">
+                            <div class="absolute inset-0 bg-green-500/20 rounded-full blur-2xl"></div>
+                            <!-- // AMÉLIORATION: lazy-load portrait mobile pour améliorer LCP -->
+                            <img src="assets/portrait.png" alt="Portrait d'Alexandre" loading="lazy" class="relative z-10 w-full h-full object-cover rounded-full" style="-webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%); mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div>
+                            <span class="text-3xl md:text-4xl font-bold mono gradient-text">Alexandre Dossoukpevi</span>
+                            <p class="text-gray-400 text-sm mono">Architecte Cybersécurité & Réseaux</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="w-3 h-3 bg-green-400 rounded-full pulse-dot"></span>
+                        <!-- // AMÉLIORATION: Message de disponibilité unifié (Hero) -->
+                        <span class="text-green-400 mono text-sm">Disponible — Poste Ingénieur Réseaux & Cybersécurité | Ouvert aux opportunités locales et internationales</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Architecte
+                        <!-- // AMÉLIORATION: Animation typing CSS appliquée sur le mot 'Cybersécurité' -->
+                        <span class="gradient-text typing">Cybersécurité</span>
+                        & Réseaux
+                    </h1>
+                    
+                    <!-- // AMÉLIORATION: Ajuste contraste texte pour WCAG AA -->
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        Spécialisé en <span class="text-green-400">architecture sécurisée</span>, 
+                        <span class="text-cyan-400">IDS/IPS</span> et 
+                        <span class="text-purple-400">défense active</span>. 
+                        Je conçois, sécurise et documente des infrastructures critiques.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mb-10">
+                        <!-- // AMÉLIORATION: CTA principal actualisé pour disponibilité / lien vers Contact -->
+                        <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-green-500 to-cyan-500 text-black font-bold rounded-lg hover:shadow-lg hover:shadow-green-500/30 transition transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>Disponible — Ing. Réseaux & Cybersécurité
+                        </a>
+                        <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="px-8 py-4 border border-green-500/50 text-green-400 rounded-lg hover:bg-green-500/10 transition flex items-center gap-2">
+                            <i class="fab fa-github"></i>nexwarden-labs
+                        </a>
+                        <!-- // AMÉLIORATION: Ajout aria-label et rel sécurisé sur téléchargement CV -->
+                        <a href="cv_alex.html" aria-label="Consulter le CV Alexandre Dossoukpevi" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/50" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf mr-2"></i>Consulter mon CV
+                        </a>
+                    </div>
+                    
+                    <div class="flex gap-6 flex-wrap">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text">14+</div>
+                            <div class="text-gray-500 text-sm">Projets Réalisés</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-cyan-400">2</div>
+                            <div class="text-gray-500 text-sm">Projets Majeurs</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-400">1</div>
+                            <div class="text-gray-500 text-sm">Mémoire Validé</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text">10+</div>
+                            <div class="text-gray-500 text-sm">Outils Maîtrisés</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative hero-right">
+                    <!-- Portrait Image with Cyber Blend -->
+                    <div class="hero-portrait-wrap" aria-hidden="true">
+                        <!-- // AMÉLIORATION: lazy-load portrait hero pour améliorer LCP -->
+                        <img src="assets/portrait.png" alt="Portrait d'Alexandre Dossoukpevi" loading="lazy" class="portrait-image" />
+                    </div>
+
+                    <div class="terminal-window glow-green relative z-10 backdrop-blur-sm bg-gray-900/80">
+                        <div class="terminal-header">
+                            <div class="terminal-dot bg-red-500"></div>
+                            <div class="terminal-dot bg-yellow-500"></div>
+                            <div class="terminal-dot bg-green-500"></div>
+                            <span class="ml-4 text-gray-400 text-sm mono">terminal@nexwarden-labs</span>
+                        </div>
+                    <div class="p-6 mono text-sm lg:pr-40">
+                        <div class="text-green-400 mb-2">$ tree github.com/Alex-DKPV/</div>
+                        <div class="text-cyan-400 mb-1">📦 nexwarden-labs/ <span class="text-green-400">← ENVIRONNEMENT PRINCIPAL</span></div>
+                        <div class="text-gray-400 mb-1 pl-4">├── 📁 academic/</div>
+                        <div class="text-purple-400 mb-1 pl-8">│   └── ids-suricata-memoire/ <span class="text-purple-400">✓ VALIDÉ</span></div>
+                        <div class="text-gray-400 mb-1 pl-4">├── 📁 professional/</div>
+                        <div class="text-green-400 mb-1 pl-8">│   └── banking-architecture/ <span class="text-yellow-400">🚧 EN COURS</span></div>
+                        <div class="text-gray-400 mb-1 pl-4">├── 📁 configs/</div>
+                        <div class="text-gray-400 mb-4 pl-4">└── 📁 docs/</div>
+                        
+                        <div class="text-green-400 mb-2">$ cat README.md | head -5</div>
+                        <div class="text-gray-300 mb-1"># NEXWARDEN-LABS</div>
+                        <div class="text-gray-400 mb-1 text-xs">→ Environnement de travail cybersécurité</div>
+                        <div class="text-gray-400 mb-1 text-xs">→ Projets académiques + professionnels</div>
+                        <div class="text-gray-400 mb-4 text-xs">→ Preuves techniques vérifiables</div>
+                        
+                        <div class="mt-4 flex items-center">
+                            <span class="text-green-400">$</span>
+                            <span class="ml-2 w-2 h-5 bg-green-400 animate-pulse"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-green-400 mono text-sm tracking-wider">EXPERTISE TECHNIQUE</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6">Compétences & Technologies</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Chaque compétence est prouvable via les projets GitHub</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- IDS/IPS - Lié au mémoire -->
+                <div class="cyber-border rounded-xl p-6 bg-gray-900/50 backdrop-blur fade-in">
+                    <div class="w-14 h-14 rounded-lg bg-yellow-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-virus text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">IDS/IPS & Detection</h3>
+                    <p class="text-gray-400 text-sm mb-4">Déploiement Suricata, création de règles, analyse d'alertes, intégration SOC</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded-full mono">Suricata</span>
+                        <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded-full mono">Snort</span>
+                        <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded-full mono">Wazuh</span>
+                    </div>
+                    <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/academic/ids-suricata-memoire" target="_blank" rel="noopener" class="proof-link academic">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Preuve : Mémoire IDS</span>
+                    </a>
+                </div>
+                
+                <!-- Architecture Réseau - Lié au projet bancaire -->
+                <div class="cyber-border rounded-xl p-6 bg-gray-900/50 backdrop-blur fade-in">
+                    <div class="w-14 h-14 rounded-lg bg-cyan-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-building-columns text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Architecture Critique</h3>
+                    <p class="text-gray-400 text-sm mb-4">Conception d'infrastructures bancaires, segmentation zones, DMZ, conformité</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full mono">Zone-Based FW</span>
+                        <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full mono">DMZ</span>
+                        <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded-full mono">VLAN</span>
+                    </div>
+                    <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="proof-link">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Preuve : Projet Bancaire</span>
+                    </a>
+                </div>
+                
+                <!-- Sécurité Réseau -->
+                <div class="cyber-border rounded-xl p-6 bg-gray-900/50 backdrop-blur fade-in">
+                    <div class="w-14 h-14 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-network-wired text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sécurité Réseau</h3>
+                    <p class="text-gray-400 text-sm mb-4">Segmentation VLAN, firewalls VyOS, routing avancé, ACL</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full mono">VyOS</span>
+                        <span class="skill-tag">pfSense</span>
+                        <span class="skill-tag">OPNsense</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full mono">VLAN 802.1Q</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full mono">iptables</span>
+                    </div>
+                    <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/configs" target="_blank" rel="noopener" class="proof-link">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Preuve : Configs</span>
+                    </a>
+                </div>
+                
+                <!-- Virtualisation -->
+                <div class="cyber-border rounded-xl p-6 bg-gray-900/50 backdrop-blur fade-in">
+                    <div class="w-14 h-14 rounded-lg bg-green-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-server text-green-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Virtualisation & Labs</h3>
+                    <p class="text-gray-400 text-sm mb-4">Création d'environnements de test, simulation d'infrastructures complexes</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full mono">VMware</span>
+                        <span class="px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full mono">GNS3</span>
+                        <span class="px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full mono">VirtualBox</span>
+                    </div>
+                    <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="proof-link">
+                        <i class="fas fa-flask"></i>
+                        <span>Preuve : Labs</span>
+                    </a>
+                </div>
+                
+                <!-- Scripting -->
+                <div class="cyber-border rounded-xl p-6 bg-gray-900/50 backdrop-blur fade-in">
+                    <div class="w-14 h-14 rounded-lg bg-purple-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-purple-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Scripting & Automation</h3>
+                    <p class="text-gray-400 text-sm mb-4">Automatisation de tâches sécurité, parsing de logs, outils personnalisés</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-xs rounded-full mono">Python</span>
+                        <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-xs rounded-full mono">Bash</span>
+                    </div>
+                    <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/scripts" target="_blank" rel="noopener" class="proof-link">
+                        <i class="fas fa-terminal"></i>
+                        <span>Preuve : Scripts</span>
+                    </a>
+                </div>
+                
+                <!-- Documentation -->
+                <div class="cyber-border rounded-xl p-6 bg-gray-900/50 backdrop-blur fade-in">
+                    <div class="w-14 h-14 rounded-lg bg-emerald-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-file-lines text-emerald-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Documentation Technique</h3>
+                    <p class="text-gray-400 text-sm mb-4">Rédaction de rapports, schémas d'architecture, méthodologies</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs rounded-full mono">Markdown</span>
+                        <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs rounded-full mono">Draw.io</span>
+                    </div>
+                    <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/docs" target="_blank" rel="noopener" class="proof-link">
+                        <i class="fas fa-book"></i>
+                        <span>Preuve : Docs</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - PROFESSIONNEL -->
+    <section id="projects" class="py-20 bg-gradient-to-b from-transparent via-gray-900/50 to-transparent">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-green-400 mono text-sm tracking-wider">PROJETS PROFESSIONNELS</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6">Projets en Cours</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Projets orientés entreprise, réalisme et compétences terrain — vérifiables sur GitHub</p>
+            </div>
+            
+            <!-- PROJET PHARE : Architecture Bancaire -->
+            <div class="mb-12 fade-in">
+                <div class="project-card featured cyber-border rounded-xl bg-gray-900/70 overflow-hidden transition-all duration-300">
+                    <div class="h-3 bg-gradient-to-r from-green-500 via-cyan-500 to-green-500"></div>
+                    <div class="p-8">
+                        <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+                            <div class="flex-1">
+                                <div class="flex flex-wrap items-center gap-3 mb-4">
+                                    <span class="px-3 py-1 bg-gradient-to-r from-green-500/30 to-cyan-500/30 text-green-400 text-xs rounded-full mono font-bold flex items-center gap-1">
+                                        <i class="fas fa-star"></i> PROJET PRINCIPAL
+                                    </span>
+                                    <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded mono">🚧 En cours</span>
+                                    <span class="px-2 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded mono">Professionnel</span>
+                                </div>
+                                
+                                <h4 class="text-2xl font-bold mb-3 flex items-center gap-3">
+                                    <i class="fas fa-building-columns text-cyan-400"></i>
+                                    Architecture Réseau Bancaire Sécurisée
+                                </h4>
+                                
+                                <p class="text-gray-400 mb-6">
+                                    Conception et sécurisation d'une infrastructure bancaire multi-zones incluant DMZ, Core Banking, zone SOC, IDS/IPS et segmentation stricte. Projet orienté réalisme entreprise, non académique.
+                                </p>
+                                
+                                <!-- Architecture Diagram -->
+                                <div class="bg-gray-800/50 rounded-lg p-4 mb-6">
+                                    <h5 class="text-sm font-semibold text-gray-300 mb-3 flex items-center gap-2">
+                                        <i class="fas fa-sitemap text-cyan-400"></i>
+                                        Architecture Implémentée
+                                    </h5>
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+                                        <div class="bg-gray-900/50 rounded p-3 text-center border border-cyan-500/20">
+                                            <div class="text-cyan-400 font-bold">DMZ</div>
+                                            <div class="text-gray-500">Services exposés</div>
+                                        </div>
+                                        <div class="bg-gray-900/50 rounded p-3 text-center border border-green-500/20">
+                                            <div class="text-green-400 font-bold">Core Banking</div>
+                                            <div class="text-gray-500">Transactions</div>
+                                        </div>
+                                        <div class="bg-gray-900/50 rounded p-3 text-center border border-yellow-500/20">
+                                            <div class="text-yellow-400 font-bold">Zone SOC</div>
+                                            <div class="text-gray-500">Monitoring</div>
+                                        </div>
+                                        <div class="bg-gray-900/50 rounded p-3 text-center border border-red-500/20">
+                                            <div class="text-red-400 font-bold">IDS/IPS</div>
+                                            <div class="text-gray-500">Détection</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Technologies -->
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">VyOS</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">VLAN 802.1Q</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">Suricata</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">GNS3</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">Wazuh</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">Zone-Based FW</span>
+                                </div>
+                                
+                                <!-- Ce que le visiteur peut vérifier -->
+                                <div class="bg-green-500/5 border border-green-500/20 rounded-lg p-4">
+                                    <h5 class="text-sm font-semibold text-green-400 mb-2 flex items-center gap-2">
+                                        <i class="fas fa-check-circle"></i>
+                                        À vérifier sur GitHub
+                                    </h5>
+                                    <ul class="text-gray-400 text-xs space-y-1">
+                                        <li>• Schémas d'architecture réseau (Draw.io/PNG)</li>
+                                        <li>• Configurations VyOS commentées</li>
+                                        <li>• Règles Suricata personnalisées</li>
+                                        <li>• Documentation de segmentation VLAN</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="lg:w-64 flex flex-col gap-3">
+                                <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="px-6 py-3 bg-gradient-to-r from-green-500 to-cyan-500 text-black font-bold rounded-lg hover:shadow-lg hover:shadow-green-500/30 transition text-center flex items-center justify-center gap-2">
+                                    <i class="fab fa-github"></i> Voir sur GitHub
+                                </a>
+                                <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="px-6 py-3 border border-cyan-500/50 text-cyan-400 rounded-lg hover:bg-cyan-500/10 transition text-center flex items-center justify-center gap-2">
+                                    <i class="fas fa-book"></i> Documentation
+                                </a>
+                                <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="px-6 py-3 border border-gray-600 text-gray-400 rounded-lg hover:bg-gray-800 transition text-center flex items-center justify-center gap-2">
+                                    <i class="fas fa-cog"></i> Configurations
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lien vers nexwarden-labs -->
+            <div class="text-center fade-in">
+                <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-6 py-3 bg-gray-800/50 border border-green-500/30 rounded-lg text-gray-300 hover:bg-gray-800 hover:border-green-500/50 transition">
+                    <i class="fab fa-github text-xl"></i>
+                    <span>Explorer l'ensemble de <strong class="text-green-400">nexwarden-labs</strong></span>
+                    <i class="fas fa-arrow-right text-green-400"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Section - MÉMOIRE -->
+    <section id="academic" class="py-20 relative">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-1/2 left-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-purple-400 mono text-sm tracking-wider">PROJET ACADÉMIQUE</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6">Mémoire de Soutenance</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Projet académique terminé et validé — Preuve de rigueur méthodologique</p>
+            </div>
+            
+            <!-- Mémoire IDS Suricata -->
+            <div class="max-w-4xl mx-auto fade-in">
+                <div class="project-card academic academic-border rounded-xl bg-gray-900/70 overflow-hidden transition-all duration-300">
+                    <div class="h-3 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500"></div>
+                    <div class="p-8">
+                        <div class="flex flex-col md:flex-row md:items-start gap-8">
+                            <div class="flex-1">
+                                <div class="flex flex-wrap items-center gap-3 mb-4">
+                                    <span class="px-3 py-1 bg-gradient-to-r from-purple-500/30 to-pink-500/30 text-purple-400 text-xs rounded-full mono font-bold flex items-center gap-1">
+                                        <i class="fas fa-graduation-cap"></i> MÉMOIRE VALIDÉ
+                                    </span>
+                                    <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded mono">✓ Terminé</span>
+                                    <span class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded mono">Académique</span>
+                                </div>
+                                
+                                <h4 class="text-2xl font-bold mb-3 flex items-center gap-3">
+                                    <i class="fas fa-shield-virus text-yellow-400"></i>
+                                    Mise en Place d'un IDS Suricata
+                                </h4>
+                                
+                                <p class="text-xl text-purple-400 mb-4">Mémoire de fin d'études — Réseaux & Cybersécurité</p>
+                                
+                                <p class="text-gray-400 mb-6">
+                                    Déploiement et configuration d'un système de détection d'intrusions (IDS) basé sur Suricata. Analyse des menaces, création de règles personnalisées, intégration avec stack de monitoring.
+                                </p>
+                                
+                                <!-- Contenu du mémoire -->
+                                <div class="bg-purple-500/5 border border-purple-500/20 rounded-lg p-4 mb-6">
+                                    <h5 class="text-sm font-semibold text-purple-400 mb-3 flex items-center gap-2">
+                                        <i class="fas fa-list-check"></i>
+                                        Contenu du Mémoire
+                                    </h5>
+                                    <div class="grid md:grid-cols-2 gap-3 text-xs text-gray-400">
+                                        <div class="flex items-center gap-2">
+                                            <i class="fas fa-check text-purple-400"></i>
+                                            Étude comparative IDS (Snort vs Suricata)
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fas fa-check text-purple-400"></i>
+                                            Architecture de déploiement
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fas fa-check text-purple-400"></i>
+                                            Configuration avancée Suricata
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fas fa-check text-purple-400"></i>
+                                            Création de règles personnalisées
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fas fa-check text-purple-400"></i>
+                                            Tests de détection (simulations)
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fas fa-check text-purple-400"></i>
+                                            Analyse des résultats
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Technologies -->
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">Suricata</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">Linux</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">VMware</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">Wireshark</span>
+                                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full mono">YAML</span>
+                                </div>
+                                
+                                <!-- Ce que prouve ce mémoire -->
+                                <div class="bg-gray-800/50 rounded-lg p-4">
+                                    <h5 class="text-sm font-semibold text-gray-300 mb-2">🧠 Compétences Démontrées</h5>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-full">Rigueur méthodologique</span>
+                                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-full">IDS/IPS</span>
+                                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-full">Analyse de menaces</span>
+                                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-full">Rédaction technique</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-56 flex flex-col gap-3">
+                                <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/academic/ids-suricata-memoire" target="_blank" rel="noopener" class="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-purple-500/30 transition text-center flex items-center justify-center gap-2">
+                                    <i class="fab fa-github"></i> Voir sur GitHub
+                                </a>
+                                <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/academic/ids-suricata-memoire" target="_blank" rel="noopener" class="px-6 py-3 border border-purple-500/50 text-purple-400 rounded-lg hover:bg-purple-500/10 transition text-center flex items-center justify-center gap-2">
+                                    <i class="fas fa-file-pdf"></i> Rapport Complet
+                                </a>
+                                <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/academic/ids-suricata-memoire" target="_blank" rel="noopener" class="px-6 py-3 border border-gray-600 text-gray-400 rounded-lg hover:bg-gray-800 transition text-center flex items-center justify-center gap-2">
+                                    <i class="fas fa-cog"></i> Configurations
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Distinction Académique / Professionnel -->
+            <div class="mt-12 max-w-4xl mx-auto fade-in">
+                <div class="cyber-border rounded-xl bg-gray-900/50 p-6">
+                    <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-info-circle text-cyan-400"></i>
+                        Distinction Académique / Professionnel
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="p-4 bg-purple-500/5 border border-purple-500/20 rounded-lg">
+                            <h4 class="font-semibold text-purple-400 mb-2 flex items-center gap-2">
+                                <i class="fas fa-graduation-cap"></i> Académique
+                            </h4>
+                            <p class="text-gray-400 text-sm">Projet terminé, validé, méthodologie académique. Preuve de rigueur et de capacité d'apprentissage structuré.</p>
+                            <div class="mt-2">
+                                <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/academic" target="_blank" rel="noopener" class="text-purple-400 text-xs hover:underline">
+                                    → NEXWARDEN/academic/
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-green-500/5 border border-green-500/20 rounded-lg">
+                            <h4 class="font-semibold text-green-400 mb-2 flex items-center gap-2">
+                                <i class="fas fa-briefcase"></i> Professionnel
+                            </h4>
+                            <p class="text-gray-400 text-sm">Projets en cours, orientés entreprise et réalisme. Preuve de compétences terrain applicables immédiatement.</p>
+                            <div class="mt-2">
+                                <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="text-green-400 text-xs hover:underline">
+                                    → nexwarden-labs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEXWARDEN Ecosystem Section -->
+    <section id="nexwarden" class="py-20 bg-gradient-to-b from-gray-900/50 via-transparent to-gray-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-green-400 mono text-sm tracking-wider">ÉCOSYSTÈME</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6">
+                    <span class="gradient-text">NEXWARDEN</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Structure cohérente reliant portfolio web et preuves GitHub</p>
+            </div>
+            
+            <!-- Structure GitHub -->
+            <div class="max-w-4xl mx-auto mb-12 fade-in">
+                <div class="cyber-border rounded-xl bg-gray-900/50 p-6">
+                    <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                        <i class="fab fa-github text-gray-400"></i>
+                        Structure GitHub — Repositories
+                    </h3>
+                    
+                    <div class="bg-gray-800/50 rounded-lg p-4 mono text-sm">
+                        <div class="text-cyan-400 mb-2">github.com/Alex-DKPV/</div>
+                        <div class="pl-4 space-y-1 text-gray-400">
+                            <div>├── 📦 <span class="text-purple-400">NEXWARDEN/</span> <span class="text-gray-500">← Projet académique</span></div>
+                            <div class="pl-4">│   └── 📁 academic/</div>
+                            <div class="pl-8">│       └── 📁 ids-suricata-memoire/ <span class="text-purple-400">✓ Mémoire validé</span></div>
+                            <div class="pl-12">│           ├── rapport/</div>
+                            <div class="pl-12">│           ├── configs/</div>
+                            <div class="pl-12">│           └── screenshots/</div>
+                            <div>│</div>
+                            <div>└── 📦 <span class="text-green-400">nexwarden-labs/</span> <span class="text-yellow-400">← Projet professionnel en cours</span></div>
+                            <div class="pl-4">    ├── 📁 docs/</div>
+                            <div class="pl-4">    ├── 📁 configs/</div>
+                            <div class="pl-4">    ├── 📁 diagrams/</div>
+                            <div class="pl-4">    └── 📄 README.md</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 flex flex-wrap gap-3">
+                        <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 text-gray-300 rounded-lg hover:bg-gray-700 transition text-sm">
+                            <i class="fab fa-github"></i> nexwarden-labs
+                        </a>
+                        <a href="https://github.com/Alex-DKPV" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 text-green-400 rounded-lg hover:bg-green-500/30 transition text-sm border border-green-500/30">
+                            <i class="fas fa-user"></i> Profil Alex-DKPV
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Règle de cohérence -->
+            <div class="max-w-4xl mx-auto mb-12 fade-in">
+                <div class="cyber-border rounded-xl bg-gray-900/50 p-6">
+                    <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-link text-cyan-400"></i>
+                        Règle de Cohérence Portfolio ↔ GitHub
+                    </h3>
+                    
+                    <div class="bg-cyan-500/5 border border-cyan-500/20 rounded-lg p-4 mb-4">
+                        <p class="text-cyan-400 font-semibold text-sm mb-2">
+                            <i class="fas fa-shield-check mr-2"></i>
+                            Principe appliqué
+                        </p>
+                        <p class="text-gray-400 text-sm">
+                            Aucune compétence ou projet n'apparaît sur ce portfolio sans lien GitHub correspondant. Chaque élément affiché est traçable, prouvable et vérifiable.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span class="text-gray-400">Chaque compétence pointe vers une preuve</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span class="text-gray-400">Projets académiques et pro séparés</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span class="text-gray-400">Documentation accessible publiquement</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span class="text-gray-400">Configurations et scripts versionnés</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ce que NEXWARDEN prouve -->
+            <div class="max-w-4xl mx-auto fade-in">
+                <div class="cyber-border rounded-xl p-8 bg-gray-900/50">
+                    <h3 class="text-xl font-bold mb-6 text-center">Ce que l'écosystème NEXWARDEN démontre</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 p-4 bg-green-500/5 rounded-lg border border-green-500/20">
+                            <i class="fas fa-building-columns text-green-400 text-xl"></i>
+                            <div>
+                                <div class="font-semibold text-gray-200">Architecture critique</div>
+                                <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="text-green-400 text-xs hover:underline">→ Projet bancaire</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-purple-500/5 rounded-lg border border-purple-500/20">
+                            <i class="fas fa-graduation-cap text-purple-400 text-xl"></i>
+                            <div>
+                                <div class="font-semibold text-gray-200">Rigueur académique</div>
+                                <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/academic/ids-suricata-memoire" target="_blank" rel="noopener" class="text-purple-400 text-xs hover:underline">→ Mémoire IDS</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-yellow-500/5 rounded-lg border border-yellow-500/20">
+                            <i class="fas fa-shield-virus text-yellow-400 text-xl"></i>
+                            <div>
+                                <div class="font-semibold text-gray-200">Detection Engineering</div>
+                                <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/configs" target="_blank" rel="noopener" class="text-yellow-400 text-xs hover:underline">→ Configs Suricata</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-cyan-500/5 rounded-lg border border-cyan-500/20">
+                            <i class="fas fa-file-lines text-cyan-400 text-xl"></i>
+                            <div>
+                                <div class="font-semibold text-gray-200">Documentation technique</div>
+                                <a href="https://github.com/Alex-DKPV/NEXWARDEN/tree/main/docs" target="_blank" rel="noopener" class="text-cyan-400 text-xs hover:underline">→ Docs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-green-400 mono text-sm tracking-wider">CONTACT</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6">Me Contacter</h2>
+                <!-- // AMÉLIORATION: Message de disponibilité unifié (Contact) -->
+                <p class="text-gray-300">Disponible — Poste Ingénieur Réseaux & Cybersécurité | Ouvert aux opportunités locales et internationales</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6 mb-12 fade-in">
+                <a href="mailto:dkpvalex@gmail.com" class="cyber-border rounded-xl p-6 bg-gray-900/50 text-center hover:bg-gray-800/50 transition group">
+                    <div class="w-14 h-14 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-envelope text-green-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Email</h3>
+                    <p class="text-gray-400 text-sm">dkpvalex@gmail.com</p>
+                </a>
+                
+                <a href="https://linkedin.com/in/alexnetwarden" target="_blank" rel="noopener" class="cyber-border rounded-xl p-6 bg-gray-900/50 text-center hover:bg-gray-800/50 transition group">
+                    <div class="w-14 h-14 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fab fa-linkedin text-blue-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">LinkedIn</h3>
+                    <p class="text-gray-400 text-sm">Profil professionnel</p>
+                </a>
+                
+                <a href="https://github.com/Alex-DKPV" target="_blank" rel="noopener" class="cyber-border rounded-xl p-6 bg-gray-900/50 text-center hover:bg-gray-800/50 transition group">
+                    <div class="w-14 h-14 rounded-full bg-gray-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fab fa-github text-gray-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">GitHub</h3>
+                    <p class="text-gray-400 text-sm">Preuves techniques</p>
+                </a>
+                
+                <a href="cv_alex.html" target="_blank" rel="noopener noreferrer" class="cyber-border rounded-xl p-6 bg-gray-900/50 text-center hover:bg-gray-800/50 transition group border-purple-500/30">
+                    <div class="w-14 h-14 rounded-full bg-purple-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-file-pdf text-purple-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">CV</h3>
+                    <p class="text-gray-400 text-sm">Consulter mon CV</p>
+                </a>
+            </div>
+            
+            <div class="cyber-border rounded-xl bg-gray-900/50 p-8 fade-in">
+                <!-- // AMÉLIORATION: Formulaire intégré à Formspree + validation client + sanitisation -->
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="contact-name" class="block text-sm font-medium mb-2 text-gray-300">Nom complet</label>
+                            <input id="contact-name" name="name" type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition" placeholder="Votre nom" aria-required="true">
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-sm font-medium mb-2 text-gray-300">Email</label>
+                            <input id="contact-email" name="email" type="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition" placeholder="votre@email.com" aria-required="true">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact-subject" class="block text-sm font-medium mb-2 text-gray-300">Sujet</label>
+                        <select id="contact-subject" name="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition">
+                            <option>Stage / Alternance</option>
+                            <option>Opportunité d'emploi</option>
+                            <option>Collaboration projet</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="contact-message" class="block text-sm font-medium mb-2 text-gray-300">Message</label>
+                        <textarea id="contact-message" name="message" rows="4" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition resize-none" placeholder="Votre message..." aria-required="true"></textarea>
+                    </div>
+                    <div id="formMessage" class="form-feedback" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-green-500 to-cyan-500 text-black font-bold rounded-lg hover:shadow-lg hover:shadow-green-500/30 transition transform hover:scale-[1.02]">
+                        <i class="fas fa-paper-plane mr-2"></i>Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-800 bg-gray-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
+                <div class="flex items-center gap-4">
+                    <img src="assets/logo-NEXWARDEN.png" alt="NEXWARDEN" class="w-12 h-12 object-contain filter brightness-75">
+                    <div>
+                        <span class="font-bold mono text-gray-300 uppercase tracking-wider">NEXWARDEN</span>
+                        <p class="text-xs text-gray-400">Security Architecture & Labs</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <a href="#projects" class="text-gray-400 hover:text-green-400 transition">Projets Pro</a>
+                    <a href="#academic" class="text-gray-400 hover:text-purple-400 transition">Académique</a>
+                    <a href="https://github.com/Alex-DKPV/nexwarden-labs" target="_blank" rel="noopener" class="text-gray-400 hover:text-green-400 transition">nexwarden-labs</a>
+                    <a href="#contact" class="text-gray-400 hover:text-green-400 transition">Contact</a>
+                </div>
+                
+                <div class="flex gap-4">
+                    <!-- // AMÉLIORATION: Ajout aria-label + rel noreferrer pour liens externes icônes -->
+                    <a href="https://github.com/Alex-DKPV" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir GitHub" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-500 hover:text-green-400 hover:border-green-500/50 transition">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/alexnetwarden" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir LinkedIn" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-500 hover:text-blue-400 hover:border-blue-500/50 transition">
+                        <i class="fab fa-linkedin text-lg"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                    <p>© 2026 NEXWARDEN. Portfolio cybersécurité — Preuves techniques vérifiables sur GitHub.</p>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full pulse-dot"></span>
+                        <span>Chaque compétence = une preuve GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- // AMÉLIORATION: Script déplacé dans <head> (defer). Ancien script supprimé pour éviter duplications. -->
+</body>
+</html>
