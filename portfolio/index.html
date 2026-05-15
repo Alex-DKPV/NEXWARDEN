@@ -243,14 +243,14 @@
                 img.hero-portrait,
                 img[class*="portrait"],
                 img[class*="profile"] {
-                    width: 420px;
-                    max-width: 95%;
+                    width: 100%;
+                    max-width: 420px;
                     height: auto;
-                    min-height: 480px;
+                    max-height: 640px;
                     object-fit: cover;
-                    object-position: top center;
+                    object-position: center top;
                     display: block;
-                    /* // AMÉLIORATION: suppression des !important conflictuels pour améliorer accessibilité et contrôle JS/CSS */
+                    /* Conservative change: remove forced min-height to avoid cropping on some viewports */
                     position: static;
                     bottom: auto;
                     right: auto;
@@ -324,7 +324,8 @@
                 const href = (a.getAttribute('href')||'').toLowerCase();
                 if(href.includes('github')) a.setAttribute('aria-label','Ouvrir GitHub');
                 else if(href.includes('linkedin')) a.setAttribute('aria-label','Ouvrir LinkedIn');
-                else if(href.includes('.pdf') || href.includes('cv')) a.setAttribute('aria-label','Télécharger le CV');
+                else if(href.includes('.pdf')) a.setAttribute('aria-label','Télécharger le CV');
+                else if(href.includes('cv')) a.setAttribute('aria-label','Consulter le CV');
                 else a.setAttribute('aria-label','Lien externe');
             }
         });
@@ -468,8 +469,8 @@
                             <i class="fab fa-github"></i>nexwarden-labs
                         </a>
                         <!-- // AMÉLIORATION: Ajout aria-label et rel sécurisé sur téléchargement CV -->
-                        <a href="https://alex-dkpv.github.io/NEXWARDEN/assets/cv/CV_Alexandre_DOSSOUKPEVI.pdf" download="CV_Alexandre_DOSSOUKPEVI.pdf" aria-label="Télécharger CV Alexandre Dossoukpevi" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/50" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-file-pdf mr-2"></i>Télécharger CV
+                        <a href="cv_alex.html" aria-label="Consulter le CV Alexandre Dossoukpevi" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/50" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf mr-2"></i>Consulter mon CV
                         </a>
                     </div>
                     
@@ -1072,12 +1073,12 @@
                     <p class="text-gray-400 text-sm">Preuves techniques</p>
                 </a>
                 
-                <a href="https://alex-dkpv.github.io/NEXWARDEN/assets/cv/CV_Alexandre_DOSSOUKPEVI.pdf" download="CV_Alexandre_DOSSOUKPEVI.pdf" target="_blank" rel="noopener" class="cyber-border rounded-xl p-6 bg-gray-900/50 text-center hover:bg-gray-800/50 transition group border-purple-500/30">
+                <a href="cv_alex.html" target="_blank" rel="noopener noreferrer" class="cyber-border rounded-xl p-6 bg-gray-900/50 text-center hover:bg-gray-800/50 transition group border-purple-500/30">
                     <div class="w-14 h-14 rounded-full bg-purple-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
                         <i class="fas fa-file-pdf text-purple-400 text-xl"></i>
                     </div>
                     <h3 class="font-semibold mb-2">CV</h3>
-                    <p class="text-gray-400 text-sm">Télécharger mon CV</p>
+                    <p class="text-gray-400 text-sm">Consulter mon CV</p>
                 </a>
             </div>
             

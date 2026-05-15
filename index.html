@@ -243,14 +243,14 @@
                 img.hero-portrait,
                 img[class*="portrait"],
                 img[class*="profile"] {
-                    width: 420px;
-                    max-width: 95%;
+                    width: 100%;
+                    max-width: 420px;
                     height: auto;
-                    min-height: 480px;
+                    max-height: 640px;
                     object-fit: cover;
-                    object-position: top center;
+                    object-position: center top;
                     display: block;
-                    /* // AMÉLIORATION: suppression des !important conflictuels pour améliorer accessibilité et contrôle JS/CSS */
+                    /* Conservative change: remove forced min-height to avoid cropping on some viewports */
                     position: static;
                     bottom: auto;
                     right: auto;
